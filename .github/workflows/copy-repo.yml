@@ -1,5 +1,6 @@
 name: Ping
 env:
+  owner: mcadenaroa
   repo: automate101
 
 on: 
