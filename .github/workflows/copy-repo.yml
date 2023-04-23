@@ -1,0 +1,16 @@
+name: Ping
+env:
+  repo: automate101
+
+on: 
+  repositiry-dispatch:
+    types: [run-ping]
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      -uses: actions/checkout@v2
+      -name: Install packages
+      -run: npm ci
+      -name: run tests
+      -run: npm run ping
