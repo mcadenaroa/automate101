@@ -3,7 +3,7 @@ env:
   repo: automate101
 
 on: 
-  repositiry-dispatch:
+  repository-dispatch:
     types: [run-ping]
 jobs:
   ping:
@@ -12,5 +12,5 @@ jobs:
       -uses: actions/checkout@v2
       -name: Install packages
       -run: npm ci
-      -name: run tests
+      -name: Run Tests
       -run: npm run ping
